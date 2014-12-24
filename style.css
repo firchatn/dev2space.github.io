@@ -1,6 +1,8 @@
+
 body {
   margin: 0;
   font-stretch: extra-condensed;
+    background-color: #383840;
 }
 ul li{
   display: inline-block;
@@ -10,9 +12,9 @@ ul {
   text-align: center
 }
 header {
-  position: fixed;
+  position: absolute;
   top:0;
-  background-color: burlywood;
+  background-color: #F2EBD5;
   width: 100%;
   margin: 0;
   height: 50px;
@@ -25,30 +27,33 @@ section > div {
   padding: 10px 20px;
 }
 section > div:nth-child(1) {
-  background-color: cadetblue;
-  padding: 80px 20px 10px 20px;
+  background-color: #18D9D9;
+  padding: 70px 20px 10px 20px;
 }
 section > div:nth-child(2) {
-  background-color: bisque;
+  background-color: #1797A6;
+  padding-bottom: 30px;
 }
 section > div:nth-child(3) {
-  background-color: aqua
+  background-color: #1EC6D9;
 }
 section > div:nth-child(4) {
-  background-color: black;
   color: #ccc;
 }
 section > div:nth-child(1) ul li {
   width: 40%;
-  margin: 15px;
+  max-width: 400px;
+  min-width: 200px;
+  margin:  10px 25px;
   vertical-align:  top;
 }
 .members li {
   margin: 20px;
   width: 250px;
-  height: 500px;
+  height: 400px;
 }
 .members li img {
+  margin:10px 0;
   width: 250px;
   border-radius: 20px;
   box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
@@ -63,4 +68,23 @@ section > div:last-child a:active,section > div:last-child a:hover,section > div
 }
 a:hover {
   text-shadow: 1px 1px #777;
+}
+.member-name{
+  font-size: 110%
+}
+.member-nickname {
+  font-size: 90%;
+  color: #444;
+}
+.member-bio {
+  font-size: 90%;
+}
+.member-social a {
+  margin: 3px;
+}
+.member-position {
+  margin: 5px 0;
+}
+section > div:last-child a{
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
